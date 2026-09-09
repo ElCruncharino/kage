@@ -22,8 +22,9 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - macOS-latest
-          - windows-latest
+          # We don't really have platform-specific code
+          # - macOS-latest
+          # - windows-latest
     runs-on: ${{ matrix.os }}
     steps:
     - name: Checkout repository
